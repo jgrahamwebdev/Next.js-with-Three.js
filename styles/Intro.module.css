@@ -1,0 +1,58 @@
+.introContainer {
+  position: relative;
+  width: 40vw;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.introCard {
+  width: 90%;
+  height: 90%;
+  background-color: rgba(255, 255, 255, 0.65);
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  animation: visible 1.5s forwards;
+  animation-delay: 2.5s;
+  opacity: 0;
+}
+
+.gradientBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 80%;
+  border-radius: 30px;
+  box-shadow: inset 0 0 12px 12px rgba(255, 255, 255, 0.1), inset 0 0 3px 2px rgba(255, 255, 255, 0.1);
+  background: linear-gradient(to right, #474787, #6a89cc);
+  animation: visible 1.5s forwards;
+  animation-delay: 2.5s;
+  opacity: 0;
+}
+
+.title {
+  color: #000;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.logo {
+  width: 9rem;
+  height: 9rem;
+}
+
+@keyframes visible {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
